@@ -6,9 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ML Stock Prediction - Machine Learning Models</title>
+        <title>ML Stock Prediction - Market Overview</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+        <style>
+            img {
+              border: 1px solid black;
+              border-radius: 4px;
+              padding: 5px;
+              width: 150px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+            }
+            * {
+            box-sizing: border-box;
+            }
+
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+        </style>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -30,6 +58,8 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -83,36 +113,33 @@
                             </a>
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
-                    </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Machine Learning Modeling</h1>
+                        <h1 class="mt-4">Market Overview</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="home.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Machine Learning Models</li>
+                            <li class="breadcrumb-item active">Market Overview</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                <h1>About Machine Learning Models</h1>
-                                <br><hr>
-                                <h3> ARIMA Modeling</h3>
-                                ARIMA is a widely used statistical method for time series forecasting. ARIMA stands for AutoRegressive Integrated Moving Average. There are 3 components of ARIMA and each of these components are explicitly specified in the model as a parameter. AR (Autoregression) is a model that uses the dependent relationship between an observation and some number of lagged observations. I (Integrated) is the use of differencing or raw observations (subtracting an observation from an observation at the previous time step) in order to make the times series stationary. MA (Moving Average) is a model that uses the dependency between an observation and a residual error from a moving average model applied to lagged observations.
-                                <br><hr>
-                                <h3> CART Modeling</h3>
-                                Classification and Regression Trees or CART is a model that refers to decision tree algorithms that can be used for classification or regression predictive modeling problems. Creating a CART model involves selecting input variables and split points on those variables until a suitable tree is constructed. The selection of which input variable to use and the specific split point is chosen using a greedy algorithm to minimize a cost function. Tree construction ends using a predefined stopping criterion.
-                                <br><hr>
-                                <h3>Facebook Prophet</h3>
-                                Prophet is a time series machine learning model that was developed and launched by Facebook.  Prophet is publicly available for everyone and uses a state-of-the-art model that is able to capture the daily, weekly, and yearly seasonality along with holiday effects, by implementing additive regression models.  It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.  Prophet is used in many applications across Facebook for producing reliable forecasts for planning and goal setting.
-
+                                <h1>Market Overview: What's next post-COVID?</h1>
+                                <img src="./assets/img/image (1).png" width="400" height="460">
+                                <br>
+                                As we use machine learning to predict and produce results from 2019, I am 100% sure no one predicted an entire pandemic to come on the scene. The pandemic triggered a number of channels, including for example, labor markets, global supply chains, consumption behaviors, all of which can affect global economy. So how have we adapted to such cause? Technology! Technology stocks, specifically software names, soared in 2020, delivering 42% returns, according to Fidelity. The accelerated shift towards work-from-anywhere, driven by COVID, resulted in breathtaking returns for investors who placed massive bets in areas such as e-commerce and the companies that enabled remote work and learn-from-home. (Resource: https://www.marketbeat.com/stocks/NASDAQ/MCEP/)
+                                <hr>
+                                But with the Nasdaq Composite Index (COMP) closing 2020 in record territory, finding value and knowing where to place your cash could be a difficult decision. However! 2020 winners have continued to flourish. The reason being that these top-performers will continue to flow more and more into our everyday lives, affirming our reliance on their products and service. So who are these lucky winners you ask? The 5 2020 Nasdaq Tech Winners to own in 2021 are Zoom (Up 420% in 2020; 12-Month Target: $500) , Peloton (Up 351% in 2020; 12-Month Target: $200) , CrowdStrike (Up 322% in 2020; 12-Month Target: $275), DocuSign (Up 200% in 2020; 12-Month Target: $300) and Roku (Up 148% in 2020; 12-Month Target: $400).
                             </div>
-
-    
+                            <div class="row">
+                                <div class="column">
+                                  <img src="./assets/img/image (2).png" alt="ZoomPeloton" style="width:100%">
+                                </div>
+                                <div class="column">
+                                  <img src="./assets/img/Screenshot (43).png" alt="correlation" style="width:100%">
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </main>
